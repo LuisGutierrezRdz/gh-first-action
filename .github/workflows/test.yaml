@@ -6,4 +6,4 @@ jobs:
     steps:
       - name: printing
         run: |
-        echo "${{secret.MESSAGE}}
+        echo "${{secret.MESSAGE}}"
