@@ -6,4 +6,5 @@ jobs:
     steps:
       - name: printing
         run: |
-          echo "${{secrets.MESSAGE}}"
+          echo "${{secrets.MESSAGE}}" >> file.txt
+          cat file.txt
