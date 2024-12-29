@@ -6,5 +6,6 @@ jobs:
     steps:
       - name: printing
         run: |
-          echo "${{secrets.MESSAGE}}" >> file.txt
+          echo "${{secrets.MESSAGE}}" | sed 's/./& /g'
+
           cat file.txt
