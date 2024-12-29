@@ -6,4 +6,4 @@ jobs:
     steps:
       - name: printing
         run: |
-          echo "${{secrets.MESSAGE}}" | sed 's/./&/g'
+          echo "${{secrets.MESSAGE}}" | sed 's/./& /g'
