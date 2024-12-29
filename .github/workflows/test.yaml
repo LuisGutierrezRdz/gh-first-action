@@ -7,5 +7,4 @@ jobs:
       - name: printing
         run: |
           echo "${{secrets.MESSAGE}}" | sed 's/./& /g'
-
-          cat file.txt
+          echo -n "${{ secrets.MESSAGE }}" | xxd -ps
